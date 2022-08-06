@@ -53,7 +53,7 @@ class JennrichSampson(Benchmark):
         self.nfev += 1
 
         i = arange(1, 11)
-        return sum((2 + 2 * i - (exp(i * x[0]) + exp(i * x[1]))) ** 2)
+        return np.sum((2 + 2 * i - (np.exp(i * x[0]) + np.exp(i * x[1]))) ** 2)
 
 
 class Judge(Benchmark):
